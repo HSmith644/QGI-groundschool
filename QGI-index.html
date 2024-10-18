@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Question Generator - QGI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #question {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Question Generator</h1>
+    <p id="question">Press the button to get a random question!</p>
+    <button onclick="generateRandomQuestion()">Get Random Question</button>
+
+    <script>
+        // Your questions array
+        const questions = [
+             "What can cause the aircrft to spin and how should you recover from it?",
+ "What causes the aircraft to stall and how would you recover from it?",
+ "What is the difference between QFE and QNH?",
+ "What does the pressure head do?",
+ "How does an altimeter work?",
+ "What do the numbers in the little window in the altimeter mean?",
+ "How does an ASI work?",
+ "What do the different colours on the ASI mean?",
+ "What would happen to the instruments if the pitot static source got blocked?",
+ "What does the Irving tube do?",
+ "How does a variometer work?",
+ "What happens when you switch to dolphin mode?",
+ "How do you set a frequency on the radio?",
+ "What are the limitations of FLARM?",
+ "What factors affect how much lift an aerofoil can generate?",
+ "Why does the Viking have long thin wings?",
+ "What is induced drag?",
+ "Why do the wings get thinner towards the wingtips?",
+ "Why do the wings twist from root to wingtip?",
+ "What does the MacCready ring do?",
+ "Why could we get a wing drop on a stall?",
+ "Why do we need to increase back pressure in a turn?",
+ "How does the elevator work?",
+ "How do the ailerons work?",
+ "If we don't use coordinated controls we get adverse yaw. Why is that?",
+ "Why does the aileron move up more than it moves down?",
+ "Why does the aircraft yaw as a further effect of applying aileron?",
+ "Why does the nose drop when we open the airbrakes?",
+ "Why are the wings set at a higher angle of attack than the tailplane?",
+ "Why are the wings angled upwards?",
+ "Why do we fly a faster approach speed with a heavier crew?",
+ "As we push over from a launch failure we observe the ASI reading 39kts but the aircraft hasn't stalled. Why not?",
+ "What is the difference between a spin and a spiral dive/descent?",
+ "Why is the maximum speed on a winch launch less than VNE in normal flight?",
+ "What factors affect stall speed?",
+ "What weather would indicate a warm front was coming?",
+ "What weather can we expect with a cold front?",
+ "What is Buys Ballot's law?",
+ "Why is the 2000ft wind on the met usually different to the surface wind?",
+ "Why does the wind change speed and direction throughout the day?",
+ "What is an unstable atmosphere and why do we need one for stronger thermals to develop?",
+ "How do we describe cloud (non CB) coverage?",
+ "Why do CBs get their own coverage descriptions?",
+ "What is the difference between fog, mist and haze?",
+ "What weather changes would you expect as CBs pass over the airfield?",
+ "What weather conditions are expected with low pressure?",
+ "What weather conditions are expected with high pressure?",
+ "What does relative humidity mean?",
+ "What is the 0-degree isotherm?",
+ "What does GR and BR on the met mean?",
+ "What does Prob30 mean on the weather chart?",
+ "What is a METAR and what information does it give us?",
+ "What is a TAF and what information does it give us?",
+ "What are TAFs and METARs? What information do they give us?",
+ "How are thermals formed?",
+ "Where and when should you not attempt thermal soaring?",
+ "What factors affect thermal formation?",
+ "What kind of clouds indicate thermal formation?",
+
+        ];
+
+        // Function to generate a random question
+        function generateRandomQuestion() {
+            const randomIndex = Math.floor(Math.random() * questions.length);
+            document.getElementById("question").innerText = questions[randomIndex];
+        }
+    </script>
+</body>
+</html>
